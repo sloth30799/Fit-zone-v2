@@ -1,0 +1,14 @@
+.underline-animation {
+    background: linear-gradient(currentColor 0 0) bottom left/
+        var(--underline-width, 0%) 0.1em no-repeat;
+    color: var(--color-text);
+    display: inline-block;
+    padding: 0 0.2em;
+    text-decoration: none;
+    transition: background-size 0.3s;
+}
+
+.underline-animation:hover,
+.underline-animation:active {
+    --underline-width: 100%;
+}
