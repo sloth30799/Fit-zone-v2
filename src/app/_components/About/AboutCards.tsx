@@ -1,7 +1,8 @@
-import ProgressionImg from "@/assets/images/who-we-are/progresion.png"
-import WorkoutImg from "@/assets/images/who-we-are/workout.png"
-import NutritionImg from "@/assets/images/who-we-are/nutritions.png"
 import Image from "next/image"
+
+import ProgressionImg from "@/assets/images/who-we-are/progresion.svg"
+import WorkoutImg from "@/assets/images/who-we-are/workout.svg"
+import NutritionImg from "@/assets/images/who-we-are/nutritions.svg"
 
 const cardList = [
     {
@@ -27,21 +28,16 @@ const cardList = [
 const AboutCards = () => {
     return (
         <>
-            {cardList.map((card, id) => (
+            {cardList.map((card) => (
                 <div
-                    key={id}
-                    className="flex flex-col text-black hover:text-white cursor-pointer bg-white justify-center py-3 lg:py-6 px-5 lg:px-10 text-center items-center mt-12 rounded-tl-[35px] rounded-br-[35px] shadow-2xl min-h-[340px] w-full card-item-div sm:min-h-[300px] max-w-[400px] mx-auto"
+                    className=" p-6 px-4 border rounded-lg bg-gray-800 hover:bg-slate-100 hover:text-black border-primary max-w-[300px] duration-300"
+                    key={card.title}
                 >
-                    <Image
-                        src={card.img}
-                        alt="box_img"
-                        width={50}
-                        className="mb-4"
-                    />
-                    <p className=" text-[20px]  font-bold uppercase mb-7">
+                    <Image src={card.img} alt={card.title} width={40} />
+                    <h4 className="my-2 text-[20px] text-primary">
                         {card.title}
-                    </p>
-                    <p className="text-[14px]  font-medium leading-2 w-full">
+                    </h4>
+                    <p className="leading-tight text-[13px]">
                         {card.description}
                     </p>
                 </div>

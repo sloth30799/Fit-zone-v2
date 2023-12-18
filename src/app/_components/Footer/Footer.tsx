@@ -27,7 +27,7 @@ const socialLinks = [
 
 const Footer = () => {
     return (
-        <footer className="w-full pt-2 pb-4 text-white bg-black lg:pt-8 rounded-t-2xl">
+        <footer className="w-full px-3 pt-2 pb-4 text-white bg-black lg:pt-8 rounded-t-2xl">
             <section className="container px-3 mx-auto lg:px-0">
                 <section className="grid grid-flow-row my-6 lg:grid-cols-3 lg:grid-flow-col lg:my-12 bg-slate-800">
                     <div className="col-span-1 p-6 pt-12">

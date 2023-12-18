@@ -9,7 +9,7 @@ type ButtonProps = {
 
 const Button = ({ leftIcon, rightIcon, className, children }: ButtonProps) => {
     return (
-        <button className={`${className} btn`}>
+        <button type="button" className={`${className} btn`}>
             {leftIcon && leftIcon}
             {children}
             {rightIcon && rightIcon}

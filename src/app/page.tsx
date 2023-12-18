@@ -1,14 +1,18 @@
 import Header from "./_components/Header/Header"
 import Hero from "./_components/Hero/Hero"
 import About from "./_components/About/About"
+import Classes from "./_components/Classes/Classes"
 import Footer from "./_components/Footer/Footer"
 
 export default function Home() {
     return (
         <>
             <Header />
-            <Hero />
-            <About />
+            <main className="container px-3 mx-auto">
+                <Hero />
+                <About />
+                <Classes />
+            </main>
             <Footer />
         </>
     )

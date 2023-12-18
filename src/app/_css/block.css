@@ -69,14 +69,43 @@
     width: 80px;
     height: 8px;
     display: block;
-    background-color: red;
+    background-color: rgba(var(--color-secondary) / 0.8);
 }
 
-.card-item-div {
-    transition: all 0.2s;
+/* about */
+.about-bg {
+    background-image: url("../../assets/images/who-we-are/background.jpg");
+    box-shadow: 0 0 0 100vmax #ffffff;
+    clip-path: inset(0 -100vmax);
 }
 
-.card-item-div:hover {
-    background-image: url("../../assets/images/who-we-are/info-card-bg.jpg");
-    color: white;
+.top-left-bar {
+    width: 44px;
+    height: 38px;
+    border-top: solid 4px rgba(var(--color-primary) / 1);
+    border-left: solid 4px rgba(var(--color-primary) / 1);
+    position: absolute;
+    left: -8px;
+    top: -10px;
+}
+
+.top-dot {
+    width: 4px;
+    height: 6px;
+    background-color: rgba(var(--color-primary) / 1);
+    position: absolute;
+    left: 32px;
+    top: -8px;
+}
+
+.bottom-bar {
+    width: 25px;
+    height: 8px;
+    border-top: solid 4px rgba(var(--color-primary) / 1);
+    border-left: solid 4px rgba(var(--color-primary) / 1);
+    border-right: solid 4px rgba(var(--color-primary) / 1);
+    position: absolute;
+    left: -8px;
+    bottom: -8px;
+    transform: rotate(180deg);
 }

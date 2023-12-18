@@ -5,7 +5,7 @@ import weightLifting from "@/assets/icons/Weightlifitng.svg"
 
 const Header = () => {
     return (
-        <header className="w-2/3 py-2 px-2 drop-shadow mx-auto my-3 text-text bg-background border-2 border-[#E8E8E8]">
+        <header className="w-2/3 py-2 px-2 drop-shadow mx-auto my-3 text-text bg-background border border-black rounded-sm">
             <nav className="flex items-center justify-between font-body">
                 <Image src={logo} alt="logo" width={100} />
 
@@ -27,7 +27,7 @@ const Header = () => {
 
                 <Link
                     href="/"
-                    className="text-[12px] flex items-center gap-2 bg-primary text-white px-2 py-1
+                    className="text-[12px] flex items-center gap-2 bg-primary text-white px-2 py-1 rounded-sm
                     hover:bg-red-700"
                 >
                     <Image src={weightLifting} alt="weightLifting" width={18} />
