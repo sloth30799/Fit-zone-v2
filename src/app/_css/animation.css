@@ -12,3 +12,90 @@
 .underline-animation:active {
     --underline-width: 100%;
 }
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translate(0, 110px);
+        transform: translate(0, 110px);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translate(0, 110px);
+        transform: translate(0, 110px);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes fade-in-top {
+    0% {
+        -webkit-transform: translate(0, 66%);
+        transform: translate(0, 66%);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-top {
+    0% {
+        -webkit-transform: translate(0, 66%);
+        transform: translate(0, 66%);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.class-card {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-card > .class-icon {
+    height: 100%;
+    transform: translateY(110px);
+}
+
+.class-icon > h4 {
+    color: white;
+}
+
+.class-card > .class-pop-up {
+    z-index: 0;
+    opacity: 0;
+}
+
+.class-card:hover {
+    scale: 1.05;
+}
+
+.class-card:hover > .class-icon {
+    height: 30%;
+    -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.class-card:hover > .class-pop-up {
+    -webkit-animation: fade-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: fade-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}

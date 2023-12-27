@@ -15,7 +15,7 @@ const About = () => {
                 <AboutCards />
             </section>
 
-            <section className="grid grid-cols-2 py-12 text-black about-bg">
+            <section className="grid grid-cols-2 py-12 text-white">
                 <div className="flex flex-col col-span-1 gap-4 w-[75%]">
                     <TagBox className="m-3">WHO WE ARE</TagBox>
                     <h4 className="text-2xl leading-tight">

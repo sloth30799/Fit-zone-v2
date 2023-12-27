@@ -30,7 +30,7 @@ const AboutCards = () => {
         <>
             {cardList.map((card) => (
                 <div
-                    className=" p-6 px-4 border rounded-lg bg-gray-800 hover:bg-slate-100 hover:text-black border-primary max-w-[300px] duration-300"
+                    className="p-6 pb-8 px-4 border rounded-lg bg-gray-800 hover:bg-slate-100 hover:text-black border-primary max-w-[300px] duration-300"
                     key={card.title}
                 >
                     <Image src={card.img} alt={card.title} width={40} />
